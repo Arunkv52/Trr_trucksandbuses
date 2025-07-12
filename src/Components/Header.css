@@ -1,0 +1,15 @@
+.menu-list ul li a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+.menu-list ul li a:hover {
+  color: red;
+  text-decoration: underline;
+  text-decoration-color: red;
+  transition: all 0.6s ease;
+}
+
+
+
