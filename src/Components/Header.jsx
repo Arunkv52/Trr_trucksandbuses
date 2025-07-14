@@ -52,7 +52,7 @@ const Header = () => {
               <li><a href='#'>Owners</a></li>
               <li><a href='#'>About us</a></li>
               <li>
-                <div className='flex items-center gap-2 bg-red-500 px-4 py-2 text-white rounded'>
+                <div className='flex items-center gap-2 bg-red-500 px-5 py-2 text-white rounded w-fit'>
                   <IoMdCall />
                   <button>Contact</button>
                 </div>
