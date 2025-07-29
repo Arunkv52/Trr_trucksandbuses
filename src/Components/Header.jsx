@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../assets/volvo-logo.png';
+import Logo from '../assets/logo.jpg';
 import { IoMdCall } from 'react-icons/io';
 import { HiMenu, HiX } from 'react-icons/hi';
 import '../Components/Header.css';
@@ -12,9 +12,9 @@ const Header = () => {
       <header className='w-full fixed top-0 left-0 z-50 bg-white shadow-md'>
         <div className='flex justify-between items-center'>
           {/* Logo */}
-          <div className='logo'>
+          <div className='logo md:px-5'>
             <a href='#'>
-              <img src={Logo} alt='Volvo Logo' className='w-[120px] h-auto' />
+              <img src={Logo} alt='Volvo Logo' className='w-[250px] h-auto' />
             </a>
           </div>
 
