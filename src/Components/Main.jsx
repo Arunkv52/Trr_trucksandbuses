@@ -12,14 +12,15 @@ const Main = () => {
       <main>
         <section className="main-bg">
           <div className="main-content relative top-1/2 left-0 text-white px-5">
-            <p className="text-[15px] font-semibold">Meet the new XC90</p>
+            <p className="text-[15px] font-semibold">OUR VEHICLE RANGE</p>
             <h3 className="text-[35px] pb-5 font-bold">
-              Our iconic large SUV, <br /> made even better
+              Explore vehicles built for performance, <br /> ready for every
+              road and challenge.
             </h3>
           </div>
         </section>
         <section className="main-next-bg md:py-20 py-0">
-          <div className="md:w-2/3 md:px-20 px-5 w-full py-10">
+          <div className="md:w-2/3 md:px-10 px-5 w-full py-10">
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -27,10 +28,10 @@ const Main = () => {
               viewport={{ once: true, amount: 0.5 }} // triggers when 50% in view
               className="text-[20px] md:text-[30px] font-semibold"
             >
-              Hi, welcome to my portfolio. I’m a hands-on Digital Creative
-              Director focused on crafting innovative digital experiences. Dive
-              in to explore my work, my process, and how I bring ideas to life
-              through collaboration and creativity.
+              Our modern range of light, medium and heavy duty trucks are meant
+              to meet your expectations. Safety coupled with comfort, our buses
+              ensure perfect mobility. At Eicher, we are ready with green and
+              sustainable future-ready solutions.
             </motion.h1>
           </div>
           <Framermotion />
@@ -43,40 +44,47 @@ const Main = () => {
             viewport={{ once: true, amount: 0.2 }}
           >
             <div className="abt-content ">
-              <p className="text-[17px] md:text-[15px] font-bold">
-                About TRR Group
-              </p>
               <h3 className="md:text-[40px] text-3xl font-semibold py-2 w-full">
-                We’re dedicated to giving you the freedom to{" "}
+                We have a continuously growing parts and service network that is
+                supported by a connected ecosystem to deliver superior uptime,{" "}
                 <span className="text-[#0000008e]">
                   {" "}
-                  move in a personal, sustainable and safe way.
+                  as well as innovative service - solutions that ensure higher
+                  productivity for our customers.
                 </span>
               </h3>
             </div>
             <div className="content-3 py-10 md:flex justify-start align-middle md:gap-10">
               <div className="cont-1 bg-[#f2f2f2] p-5 m-3 md:m-0">
-                <h5 className="text-2xl font-bold">Electrification</h5>
+                <h5 className="text-2xl font-bold">Heavy Duty Trucks</h5>
                 <p className="py-10 md:text-[15px]">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
-                  impedit mollitia deleniti. Fuga quibusdam earum nam sed
-                  veritatis error accusamus.
+                  The new range of BS VI Eicher Pro Heavy Duty haulage trucks
+                  and tractors, available from 18.5-55 tonne GVW, is dsigned and
+                  developed to provide unparalleled business advantage by
+                  maximizing product performance right through the life cycle of
+                  the vehicles and minimizing the cost of operations
                 </p>
               </div>
               <div className="cont-1 bg-[#f2f2f2] p-5 m-3 md:m-0">
-                <h5 className="text-2xl font-bold">Electrification</h5>
+                <h5 className="text-2xl font-bold">
+                  Light & Medium Duty Trucks
+                </h5>
                 <p className="py-10 md:text-[15px]">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
-                  impedit mollitia deleniti. Fuga quibusdam earum nam sed
-                  veritatis error accusamus.
+                  Our range of Light and Medium Duty trucks comprises the
+                  new-gen Pro 2000 Series and the advanced Pro 3000 series,
+                  designed keeping in mind both the owner's and driver's needs.
+                  These series are suitable for a variety of applications from
+                  4.9 ton to 17.75 ton GVW.
                 </p>
               </div>
               <div className="cont-1 bg-[#f2f2f2] p-5 m-3 md:m-0">
-                <h5 className="text-2xl font-bold">Electrification</h5>
+                <h5 className="text-2xl font-bold">Buses</h5>
                 <p className="py-10 md:text-[15px]">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
-                  impedit mollitia deleniti. Fuga quibusdam earum nam sed
-                  veritatis error accusamus.
+                  Eicher presents the all new Eicher BSVI Bus Range, the smart,
+                  comfortable, advanced and efficient range of next gen buses
+                  designed to deliver maximum Fuel Efficiency and Profitability.
+                  Choose among our School, Staff, Tourist or Route Permit BSVI
+                  bus range, We have a bus tailored for your every need!
                 </p>
               </div>
             </div>
@@ -87,13 +95,14 @@ const Main = () => {
             <div className="md:w-1/2 w-full h-auto">
               <img src={VolksImg} alt="" className="" />
             </div>
-            <div className="md:w-1/2 w-full md:px-20 px-4 md:py-20 py-10">
-              <h4 className="md:text-[26px] font-bold">Novas Learning</h4>
+            <div className="md:w-1/2 w-full md:px-20 px-4 md:py-10 py-10">
+              <h4 className="md:text-[26px] font-bold">Services</h4>
               <p className="pt-5 text-[15px] pb-2">
-                Na dianteira, o capô mais alto e com linhas marcadas conectam
-                com o para-choque, que agora recebe nova grade com friso cromado
-                entre os faróis, estes que também recebem detalhe cromado na
-                assinatura.
+                My Eicher is an industry-first digital platform designed to help
+                Fleet Owners and Managers manage and control their business
+                conveniently. This is enabled through features, including Fleet
+                Management, Uptime Management, Fuel Management, and a variety of
+                Value-Added Services.
               </p>
               {/* Accordition start */}
               <Myaccordition />
@@ -107,10 +116,10 @@ const Main = () => {
         {/* Contact */}
         <div className="contact-container bg-white/90 pb-20">
           <div className="contact md:pt-30 pt-20 pb-10 md:px-5 px-5">
-            <h1 className="text-black md:text-7xl text-4xl">
-              Let's sculpt Success
+            <h1 className="text-black md:text-4xl text-4xl font-extrabold">
+              Need Help? 
             </h1>
-            <h1 className="text-black/50 md:text-7xl text-[30px]">together!</h1>
+            <h1 className="text-black/50 md:text-4xl text-[30px]">Contact Our Team</h1>
           </div>
           <div className="full-contain md:flex justify-items-start md:pb-10 pb-0">
             <div className="form-contact md:px-5 px-5 md:w-1/2 w-full">
@@ -159,23 +168,12 @@ const Main = () => {
             </div>
             <div className="md:w-1/2 w-full md:px-5 px-5 md:py-0 py-10">
               <h6 className="text-black md:text-4xl text-2xl">
-                Connect with us to embark on a journey of impactful{" "}
+                Please fill out the form below to request any information or to&nbsp;
                 <span className="text-black/50 font-bold">
-                  brand consulting solutions.
-                </span>{" "}
-                Your brand transformation{" "}
-                <span className="text-black/50 font-bold">begins here.</span>
+                  drop us feedback.
+                </span>
               </h6>
-              <p className="py-10 text-black text-[18px]">
-                {" "}
-                Or start a conversation{" "}
-                <a
-                  href="#"
-                  className="text-red-500 hover:text-red-600 underline"
-                >
-                  project@trrinfra.com
-                </a>
-              </p>
+             
             </div>
           </div>
         </div>
