@@ -11,14 +11,14 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 2, ease: "easeOut" }}
         >
-          <p className="py-3 md:text-[24px] text-[17px] font-medium">
+          <p className="py-3 md:text-[28px] md:font-bold text-[17px] font-medium">
             {" "}
             When you choose Eicher genuine parts and lubricants, you gain the
-            assurance of a perfect fit for your vehicles. These parts have been
+            assurance of a <span className="text-black/50">perfect fit for your vehicles.</span> These parts have been
             meticulously developed, rigorously tested, and thoroughly validated
-            by our team of experts. They come with a performance warranty when
-            fitted in an authorised workshop. You can easily get the essential
-            Eicher genuine parts and lubricants from a vast network of Eicher
+            by<span className="text-black/50"> our team of experts.</span> They come with a performance warranty when
+            fitted in an authorised workshop. You can easily get the essential <span className="text-black/50">
+            Eicher genuine parts & lubricants</span> from a vast network of Eicher
             Parts Distribution Centers and various other channels.
           </p>
          

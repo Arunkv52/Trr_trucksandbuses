@@ -12,21 +12,21 @@ const Main = () => {
       <main>
         <section className="main-bg">
           <div className="main-content relative top-1/2 left-0 text-white px-5">
-            <p className="text-[15px] font-semibold">OUR VEHICLE RANGE</p>
             <h3 className="text-[35px] pb-5 font-bold">
               Explore vehicles built for performance, <br /> ready for every
               road and challenge.
             </h3>
           </div>
         </section>
-        <section className="main-next-bg md:py-20 py-0">
+        <section className="main-next-bg md:py-20 py-0" id="About">
           <div className="md:w-2/3 md:px-10 px-5 w-full py-10">
+          <h1 className="md:text-4xl font-bold pb-3">About Trr Trucks and Buses</h1>
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5 }}
               viewport={{ once: true, amount: 0.5 }} // triggers when 50% in view
-              className="text-[20px] md:text-[30px] font-semibold"
+              className="text-[20px] md:text-[30px] font-medium"
             >
               Our modern range of light, medium and heavy duty trucks are meant
               to meet your expectations. Safety coupled with comfort, our buses
@@ -36,7 +36,7 @@ const Main = () => {
           </div>
           <Framermotion />
         </section>
-        <section className="bg-white md:px-20 px-2 md:py-25">
+        <section className="bg-white md:px-20 px-2 md:py-25" id="Products">
           <motion.dev
             initial={{ opacity: 0, y: 150 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -90,8 +90,8 @@ const Main = () => {
             </div>
           </motion.dev>
         </section>
-        <section>
-          <div className="vol-img-design text-white md:flex justify-evenly align-top">
+        <section id="Services">
+          <div className="vol-img-design text-white md:flex justify-evenly align-top" >
             <div className="md:w-1/2 w-full h-auto">
               <img src={VolksImg} alt="" className="" />
             </div>
@@ -114,7 +114,7 @@ const Main = () => {
           <About />
         </section>
         {/* Contact */}
-        <div className="contact-container bg-white/90 pb-20">
+        <div className="contact-container bg-white/90 pb-20 md:cursor-pointer" id="Contact">
           <div className="contact md:pt-30 pt-20 pb-10 md:px-5 px-5">
             <h1 className="text-black md:text-4xl text-4xl font-extrabold">
               Need Help? 
@@ -142,9 +142,9 @@ const Main = () => {
                 />
                 <label htmlFor="tel"></label>
                 <input
-                  type="email"
+                  type="tel"
                   name="tel"
-                  placeholder="Enter your email"
+                  placeholder="Enter your phone number"
                   id=""
                   className="bg-white p-3 outline-none"
                 />

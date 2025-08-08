@@ -1,73 +1,84 @@
 import React from "react";
+import Logo from "../assets/logo.jpg";
 
 const Footer = () => {
   return (
     <>
       <footer className="text-white py-15 bg-[#030436]">
-        <div className="footer-row-1 text-center">
-          <p className="text-[20px]">
-            <strong>Quick Links</strong>
-          </p>
-          <ul className="flex justify-center items-center gap-6 gap-md-10 flex-wrap py-5 underline">
-            <li>
-              <a href="">About</a>
-            </li>
-            <li>
-              <a href="">Products</a>
-            </li>
-            <li>
-              <a href="">Services</a>
-            </li>
-           
-            <li>
-              <a href="">Contact</a>
-            </li>
-          </ul>
+        <div className="md:px-5 px-5 md:flex justify-between">
+          <div className="footer-logo">
+            <img src={Logo} alt="Logo" className="md:w-[250px]" />
+            <p className="text-[18px] text-left pt-5">
+              <strong>Register Office Location</strong>
+            </p>
+            <ul className="gap-5 flex-wrap py-2">
+              <li className="pb-3">
+                <a href="">
+                  New No.5, 1st Cross Street, Seethammal Extn,<br />{" "} Teynampet, 
+                  Chennai -600 018
+                </a>
+              </li>
+              <li>
+                <a href="">Phone : +91 98410 12828</a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-row-1 text-left md:py-0 py-5">
+            <p className="text-[20px]">
+              <strong>Quick Links</strong>
+            </p>
+            <ul className="py-3 underline ">
+              <li className="pt-1">
+                <a href="#About">About</a>
+              </li>
+              <li className="pt-1">
+                <a href="#Products">Products</a>
+              </li>
+              <li className="pt-1">
+                <a href="#Services">Services</a>
+              </li>
+
+              <li className="pt-1">
+                <a href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-row-2 text-left">
+            <p className="text-[20px]">
+              <strong>Our Branches</strong>
+            </p>
+            <ul className="py-3 underline">
+              <li className="pt-1">
+                <a href="">Acharapakkam</a>
+              </li>
+              <li className="pt-1">
+                <a href="">Virudhachalam</a>
+              </li>
+              <li className="pt-1">
+                <a href="">Cuddalore</a>
+              </li>
+              <li className="pt-1">
+                <a href="">Chidambaram</a>
+              </li>
+              <li className="pt-1">
+                <a href="">Tirukalukundram</a>
+              </li>
+              <li className="pt-1">
+                <a href="">Kanchipuram</a>
+              </li>
+              <li className="pt-1">
+                <a href="">Uthiramerur</a>
+              </li>
+              <li className="pt-1">
+                <a href="">Pavunjur</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="footer-row-2 text-center py-3">
-          <p className="text-[20px]">
-            <strong>Branches</strong>
-          </p>
-          <ul className="flex justify-center items-center gap-6 gap-md-10 flex-wrap py-5 underline">
-            <li>
-              <a href="">Coimbatore</a>
-            </li>
-            <li>
-              <a href="">Pollachi</a>
-            </li>
-            <li>
-              <a href="">Ooty</a>
-            </li>
-            <li>
-              <a href="">Palladam</a>
-            </li>
-            <li>
-              <a href="">Annur</a>
-            </li>
-            <li>
-              <a href="">Udumalpet</a>
-            </li>
-          </ul>
-        </div>
-        <div className="footer-row-3 py-3">
-          <p className="text-[20px] text-center">
-            <strong>Main Branch</strong>
-          </p>
-          <ul className="flex justify-center items-center gap-5 flex-wrap py-2">
-            <li>
-              <a href="">
-                New No.5, 1st Cross Street, Seethammal Extn, Teynampet, Chennai
-                -600 018 *
-              </a>
-            </li>
-            <li>
-              <a href="">+91 98410 12828</a>
-            </li>
-          </ul>
-        </div>
-        <div className="footer-row-4 pt-5">
-          <p className="text-center text-[13px]">
-            © 2025 Prism Adverto Pvt Ltd
+
+        <div className="footer-row-4 pt-5 md:px-5 px-5">
+          <p className="text-left text-[13px]">
+            © 2025 Reserved by TRR Group.  Developed by <span className="text-red-500"><a href="https://www.prismadverto.com/">Prism Adverto Pvt Ltd</a></span>
           </p>
         </div>
       </footer>
