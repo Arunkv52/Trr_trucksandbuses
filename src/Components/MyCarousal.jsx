@@ -5,7 +5,7 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "./ui/carousel";
+} from "./components/ui/carousel";
 
 import Motion4 from "../assets/motion-4.jpg";
 import Motion6 from "../assets/motion-6.jpg";
