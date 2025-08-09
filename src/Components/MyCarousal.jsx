@@ -10,7 +10,7 @@ import {
 import Motion4 from "../assets/motion-4.jpg";
 import Motion6 from "../assets/motion-6.jpg";
 
-const MyCarousel = () => {
+const Mycarousel = () => {
   return (
     <Carousel
       plugins={[
@@ -37,4 +37,4 @@ const MyCarousel = () => {
   );
 };
 
-export default MyCarousel;
+export default Mycarousel;
