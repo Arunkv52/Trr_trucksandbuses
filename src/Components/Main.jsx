@@ -5,33 +5,43 @@ import { motion } from "framer-motion";
 import VolksImg from "../assets/ban-img.jpg";
 import Myaccordition from "./Myaccordition";
 import About from "./About";
+import EicherLogo from "../assets/trr-trcuks-buses.svg";
+import MyCarousal from "./MyCarousal";
 
 const Main = () => {
   return (
     <>
       <main>
         <section className="main-bg">
-          <div className="main-content relative top-1/2 left-0 text-white px-5">
-            <h3 className="text-[35px] pb-5 font-bold">
-              Explore vehicles built for performance, <br /> ready for every
-              road and challenge.
-            </h3>
+          <div className="main-content relative top-20 left-0 text-white px-5">
+            <img src={EicherLogo} alt="" />
+            <div className="main-cont-txt">
+              <h3 className="text-[35px] py-[200px] font-bold">
+                Explore vehicles built for performance, <br /> ready for every
+                road and challenge.
+              </h3>
+            </div>
           </div>
         </section>
         <section className="main-next-bg md:py-20 py-0" id="About">
           <div className="md:w-2/3 md:px-10 px-5 w-full py-10">
-          <h1 className="md:text-4xl font-bold pb-3">About Trr Trucks and Buses</h1>
+            <h1 className="md:text-4xl text-[22px] font-bold uppercase pb-3">
+              About Trr Trucks and Buses
+            </h1>
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5 }}
               viewport={{ once: true, amount: 0.5 }} // triggers when 50% in view
-              className="text-[20px] md:text-[30px] font-medium"
+              className="text-[18px] md:text-[26px] font-medium"
             >
-              Our modern range of light, medium and heavy duty trucks are meant
-              to meet your expectations. Safety coupled with comfort, our buses
-              ensure perfect mobility. At Eicher, we are ready with green and
-              sustainable future-ready solutions.
+              Building on its rich legacy in the automobile industry, TRR has
+              added a new milestone by launching the largest sales point for the
+              premium and high-performing brand <strong> Eicher</strong> in the
+              commercial vehicle segment. This marks a turning point in the
+              market, where expectations are higher than ever — and TRR meets
+              them with the same exceptional quality of service offered across
+              all its divisions.
             </motion.h1>
           </div>
           <Framermotion />
@@ -56,8 +66,11 @@ const Main = () => {
             </div>
             <div className="content-3 py-10 md:flex justify-start align-middle md:gap-10">
               <div className="cont-1 bg-[#f2f2f2] p-5 m-3 md:m-0">
-                <h5 className="text-2xl font-bold">Heavy Duty Trucks</h5>
-                <p className="py-10 md:text-[15px]">
+                <img src={EicherLogo} alt="" />
+                <h5 className="text-2xl font-bold py-2 uppercase">
+                  Heavy Duty Trucks
+                </h5>
+                <p className="py-5 md:text-[15px]">
                   The new range of BS VI Eicher Pro Heavy Duty haulage trucks
                   and tractors, available from 18.5-55 tonne GVW, is dsigned and
                   developed to provide unparalleled business advantage by
@@ -66,10 +79,11 @@ const Main = () => {
                 </p>
               </div>
               <div className="cont-1 bg-[#f2f2f2] p-5 m-3 md:m-0">
-                <h5 className="text-2xl font-bold">
+                <img src={EicherLogo} alt="" />
+                <h5 className="text-2xl font-bold py-2 uppercase">
                   Light & Medium Duty Trucks
                 </h5>
-                <p className="py-10 md:text-[15px]">
+                <p className="py-5 md:text-[15px]">
                   Our range of Light and Medium Duty trucks comprises the
                   new-gen Pro 2000 Series and the advanced Pro 3000 series,
                   designed keeping in mind both the owner's and driver's needs.
@@ -78,8 +92,9 @@ const Main = () => {
                 </p>
               </div>
               <div className="cont-1 bg-[#f2f2f2] p-5 m-3 md:m-0">
-                <h5 className="text-2xl font-bold">Buses</h5>
-                <p className="py-10 md:text-[15px]">
+                <img src={EicherLogo} alt="" />
+                <h5 className="text-2xl font-bold py-2 uppercase">Buses</h5>
+                <p className="py-5 md:text-[15px]">
                   Eicher presents the all new Eicher BSVI Bus Range, the smart,
                   comfortable, advanced and efficient range of next gen buses
                   designed to deliver maximum Fuel Efficiency and Profitability.
@@ -90,13 +105,30 @@ const Main = () => {
             </div>
           </motion.dev>
         </section>
+        {/* include new Scroll */}
+        <section id="scr-gallery md:py-10">
+          <div className="scr-item md:flex flex-row-reverse md:flex-row overflow-x-hidden">
+            <div className="md:w-1/2 w-full md:p-20 p-5 text-white">
+              <h1 className="md:text-[26px] font-bold uppercase">Eicher Models</h1>
+              <ul className="py-5 list-">
+                <li>1. Heavy Duty Trucks</li>
+                <li>2. Light & Medium Duty Trucks</li>
+                <li>3. Small Trucks</li>
+                <li>4. Buses</li>
+              </ul>
+            </div>
+            <div className="md:w-1/2 w-full bg-white">
+              <MyCarousal />
+            </div>
+          </div>
+        </section>
         <section id="Services">
-          <div className="vol-img-design text-white md:flex justify-evenly align-top" >
+          <div className="vol-img-design text-white md:flex md:flex-row flex-row-reverse justify-evenly align-top">
             <div className="md:w-1/2 w-full h-auto">
               <img src={VolksImg} alt="" className="" />
             </div>
             <div className="md:w-1/2 w-full md:px-20 px-4 md:py-10 py-10">
-              <h4 className="md:text-[26px] font-bold">Services</h4>
+              <h4 className="md:text-[26px] font-bold uppercase">Services</h4>
               <p className="pt-5 text-[15px] pb-2">
                 My Eicher is an industry-first digital platform designed to help
                 Fleet Owners and Managers manage and control their business
@@ -114,12 +146,17 @@ const Main = () => {
           <About />
         </section>
         {/* Contact */}
-        <div className="contact-container bg-white/90 pb-20 md:cursor-pointer" id="Contact">
+        <div
+          className="contact-container bg-white/90 pb-20 md:cursor-pointer"
+          id="Contact"
+        >
           <div className="contact md:pt-30 pt-20 pb-10 md:px-5 px-5">
             <h1 className="text-black md:text-4xl text-4xl font-extrabold">
-              Need Help? 
+              Need Help?
             </h1>
-            <h1 className="text-black/50 md:text-4xl text-[30px]">Contact Our Team</h1>
+            <h1 className="text-black/50 md:text-4xl text-[30px]">
+              Contact Our Team
+            </h1>
           </div>
           <div className="full-contain md:flex justify-items-start md:pb-10 pb-0">
             <div className="form-contact md:px-5 px-5 md:w-1/2 w-full">
@@ -153,27 +190,33 @@ const Main = () => {
                   name="textarea"
                   id=""
                   cols="5"
-                  rows="5"
+                  rows="3"
                   className="bg-white p-3 outline-none"
                   placeholder="Comments"
                 ></textarea>
                 {/* Here add a Recaptacha */}
                 <button
                   type="submit"
-                  className="bg-[#ff0000] hover:bg-blue-900 text-black font-bold py-5 cursor-pointer"
+                  className="bg-[#ff0000] hover:bg-blue-900 text-black font-bold py-3 cursor-pointer"
                 >
                   Submit
                 </button>
               </form>
             </div>
-            <div className="md:w-1/2 w-full md:px-5 px-5 md:py-0 py-10">
+            <div className="md:w-1/2 w-full md:px-30 px-5 md:py-0 py-10">
               <h6 className="text-black md:text-4xl text-2xl">
-                Please fill out the form below to request any information or to&nbsp;
+                Please fill out the form below to request any information or
+                to&nbsp;
                 <span className="text-black/50 font-bold">
                   drop us feedback.
                 </span>
               </h6>
-             
+              <p className="py-5">
+                Please fill out the form below to request more information,
+                share your questions, or provide us with your valuable feedback.
+                We appreciate your input and will get back to you as soon as
+                possible.
+              </p>
             </div>
           </div>
         </div>

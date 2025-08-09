@@ -5,21 +5,24 @@ const Footer = () => {
   return (
     <>
       <footer className="text-white py-15 bg-[#030436]">
-        <div className="md:px-5 px-5 md:flex justify-between">
+        <div className="md:px-20 px-5 md:flex justify-between">
           <div className="footer-logo">
             <img src={Logo} alt="Logo" className="md:w-[250px]" />
             <p className="text-[18px] text-left pt-5">
-              <strong>Register Office Location</strong>
+              <strong>Register Office Location :</strong>
             </p>
             <ul className="gap-5 flex-wrap py-2">
-              <li className="pb-3">
+              <li className="pb-5">
                 <a href="">
                   New No.5, 1st Cross Street, Seethammal Extn,<br />{" "} Teynampet, 
                   Chennai -600 018
                 </a>
               </li>
               <li>
-                <a href="">Phone : +91 98410 12828</a>
+                <a href="tel:9841012828">Phone : +91 98410 12828</a>
+              </li>
+              <li>
+                <a href="mailto:info@trrtrucksandbuses.com">Mail : info@trrtrucksandbuses.com</a>
               </li>
             </ul>
           </div>
@@ -76,7 +79,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer-row-4 pt-5 md:px-5 px-5">
+        <div className="footer-row-4 pt-5 md:px-20 px-5">
           <p className="text-left text-[13px]">
             © 2025 Reserved by TRR Group.  Developed by <span className="text-red-500"><a href="https://www.prismadverto.com/">Prism Adverto Pvt Ltd</a></span>
           </p>
