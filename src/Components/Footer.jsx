@@ -19,10 +19,14 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="tel:9841012828">Phone : +91 98410 12828</a>
+                <a href="tel:044-24343828">Phone : 044-24343828</a>
+              </li>
+              <li><a href="tel:91769173458">Mobile : +91 91769 173458</a></li>
+              <li>
+                <a href="mailto:info@trrtrucksandbuses.in">Mail : info@trrtrucksandbuses.in</a>
               </li>
               <li>
-                <a href="mailto:info@trrtrucksandbuses.com">Mail : info@trrtrucksandbuses.com</a>
+                <a href="https://www.trrgroup.in/">Website : www.trrgroup.in</a>
               </li>
             </ul>
           </div>
