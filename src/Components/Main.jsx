@@ -110,7 +110,7 @@ const Main = () => {
           <div className="scr-item md:flex flex-row-reverse md:flex-row overflow-x-hidden">
             <div className="md:w-1/2 w-full md:p-20 p-5 text-white">
               <h1 className="md:text-[26px] font-bold uppercase">Eicher Models</h1>
-              <ul className="py-5 text-[24px]">
+              <ul className="py-5 md:text-[24px] text-[16px]">
                 <li>1. Heavy Duty Trucks</li>
                 <li>2. Light & Medium Duty Trucks</li>
                 <li>3. Small Trucks</li>

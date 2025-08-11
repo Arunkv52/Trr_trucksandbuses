@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <footer className="text-white py-15 bg-[#030436]">
         <div className="md:px-0 md:ml-[80px] ml-0 px-5 md:flex justify-">
-          <div className="w-[70%]">
+          <div className="md:w-[70%] w-full">
             <div className="footer-logo">
               <img src={Logo} alt="Logo" className="md:w-[250px]" />
               <p className="text-[18px] text-left pt-5">
@@ -38,7 +38,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="w-[15%]">
+          <div className="md:w-[15%] w-full">
             <div className="footer-row-1 text-left md:py-0 py-5">
               <p className="text-[20px]">
                 <strong>Quick Links</strong>
@@ -60,7 +60,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="w-[15%]">
+          <div className="md:w-[15%] w-full">
             <div className="footer-row-2 text-left">
               <p className="text-[20px]">
                 <strong>Our Branches</strong>
