@@ -66,73 +66,73 @@ const Footer = () => {
                 <strong>Our Branches</strong>
               </p>
               <ul className="text-[15px] md:py-3">
-                <li className="pb-1">
+                <li className="pb-1 ">
                   <a
                     href="#"
-                    className="hover:text-red-700"
+                    className="hover:text-red-700 underline"
                     title="Acharapakkam, Tamil Nadu 603301"
                   >
                     Acharapakkam
                   </a>
                 </li>
-                <li className="pb-1">
+                <li className="pb-1 ">
                   <a
                     href="#"
-                    className="hover:text-red-700"
+                    className="hover:text-red-700 underline"
                     title="Periyar Nagar, Bypass Road, Ponneri, Virudhachalam - Tamil Nadu 606001"
                   >
                     Virudhachalam
                   </a>
                 </li>
-                <li className="pb-1">
+                <li className="pb-1 ">
                   <a
                     href="#"
-                    className="hover:text-red-700"
+                    className="hover:text-red-700 underline"
                     title="Periyar Nagar, Bypass Road, Ponneri, Cuddalore, Tamil Nadu "
                   >
                     Cuddalore
                   </a>
                 </li>
-                <li className="pb-1">
+                <li className="pb-1 ">
                   <a
                     href="#"
-                    className="hover:text-red-700"
+                    className="hover:text-red-700 underline"
                     title="No.1, North Main Road, Next To Bsnl Office, Vandigate, Chidambaram, Tamilnadu 608001"
                   >
                     Chidambaram
                   </a>
                 </li>
-                <li className="pb-1">
+                <li className="pb-1 ">
                   <a
                     href="#"
-                    className="hover:text-red-700"
+                    className="hover:text-red-700 underline"
                     title=" Mangalam near V.S.Public School, No.244, Mosque St, Tirukazhukundram Tamil Nadu 603109"
                   >
                     Tirukazhukundram
                   </a>
                 </li>
-                <li className="pb-1">
+                <li className="pb-1 ">
                   <a
                     href="#"
-                    className="hover:text-red-700"
+                    className="hover:text-red-700 underline"
                     title="No 471, Chengalpattu Road, Nchipuramnchipuram, Kancheepuram, Tamil Nadu, 631561"
                   >
                     Kanchipuram
                   </a>
                 </li>
-                <li className="pb-1">
+                <li className="pb-1 ">
                   <a
                     href="#"
-                    className="hover:text-red-700"
+                    className="hover:text-red-700 underline"
                     title="SH 118A, Uthiramerur, Tamil Nadu 603406"
                   >
                     Uthiramerur
                   </a>
                 </li>
-                <li className="pb-1">
+                <li className="pb-1 ">
                   <a
                     href="#"
-                    className="hover:text-red-700"
+                    className="hover:text-red-700 underline"
                     title=" Main Road, Pavunjur , Tamilnadu 603 312"
                   >
                     Pavunjur
