@@ -14,7 +14,7 @@ const Main = () => {
       <main>
         <section className="main-bg">
           <div className="main-content relative top-20 left-0 text-white px-5">
-            <img src={EicherLogo} alt="" />
+            <img src={EicherLogo} alt="" className="w-[200px]"/>
             <div className="main-cont-txt">
               <h3 className="text-[35px] py-[200px] font-bold">
                 Explore vehicles built for performance, <br /> ready for every
@@ -26,7 +26,7 @@ const Main = () => {
         <section className="main-next-bg md:py-20 py-0" id="About">
           <div className="md:w-2/3 md:px-10 px-5 w-full py-10">
             <h1 className="md:text-4xl text-[22px] font-bold uppercase pb-3">
-              About Trr Trucks and Buses
+              <span className="text-red-700"><strong>About</strong></span> Trr Trucks and Buses
             </h1>
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
@@ -110,7 +110,7 @@ const Main = () => {
           <div className="scr-item md:flex flex-row-reverse md:flex-row overflow-x-hidden">
             <div className="md:w-1/2 w-full md:p-20 p-5 text-white">
               <h1 className="md:text-[26px] font-bold uppercase">Eicher Models</h1>
-              <ul className="py-5 list-">
+              <ul className="py-5 text-[24px]">
                 <li>1. Heavy Duty Trucks</li>
                 <li>2. Light & Medium Duty Trucks</li>
                 <li>3. Small Trucks</li>
