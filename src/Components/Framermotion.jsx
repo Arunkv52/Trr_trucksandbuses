@@ -3,11 +3,13 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import Slide_1 from '../assets/motion-1.webp';
 import Slide_2 from '../assets/motion-6.jpg';
 import Slide_3 from '../assets/motion-3.webp';
+import StaffBus from '../assets/Satff_bus.png'
+import SchoolBus from '../assets/school_bus.jpg'
 import Slide_4 from '../assets/motion-4.jpg';
 
 
 
-const images = [Slide_1, Slide_2, Slide_3, Slide_4];
+const images = [Slide_1, Slide_2, Slide_3, StaffBus, SchoolBus, Slide_4];
 
 const HorizontalScrollSection = () => {
   const targetRef = useRef(null);

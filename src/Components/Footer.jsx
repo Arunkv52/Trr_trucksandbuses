@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <>
       <footer className="text-white py-15 bg-[#030436]">
-        <div className="md:px-0 md:ml-[80px] ml-0 px-5 md:flex justify-">
-          <div className="md:w-[70%] w-full">
+        <div className="md:px-0 md:ml-[80px] ml-0 px-5 md:flex justify-start">
+          <div className="md:w-[60%] w-full">
             <div className="footer-logo">
               <img src={Logo} alt="Logo" className="md:w-[250px]" />
               <p className="text-[18px] text-left pt-5">
@@ -60,84 +60,28 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="md:w-[15%] w-full">
+          <div className="md:w-[25%] w-full">
             <div className="footer-row-2 text-left">
               <p className="text-[20px]">
                 <strong>Our Branches</strong>
               </p>
               <ul className="text-[15px] md:py-3">
-                <li className="pb-1 ">
-                  <a
-                    href="#"
-                    className="hover:text-red-700 underline"
-                    title="Acharapakkam, Tamil Nadu 603301"
-                  >
-                    Acharapakkam
-                  </a>
-                </li>
-                <li className="pb-1 ">
-                  <a
-                    href="#"
-                    className="hover:text-red-700 underline"
-                    title="Periyar Nagar, Bypass Road, Ponneri, Virudhachalam - Tamil Nadu 606001"
-                  >
-                    Virudhachalam
-                  </a>
-                </li>
-                <li className="pb-1 ">
-                  <a
-                    href="#"
-                    className="hover:text-red-700 underline"
-                    title="Periyar Nagar, Bypass Road, Ponneri, Cuddalore, Tamil Nadu "
-                  >
-                    Cuddalore
-                  </a>
-                </li>
-                <li className="pb-1 ">
-                  <a
-                    href="#"
-                    className="hover:text-red-700 underline"
-                    title="No.1, North Main Road, Next To Bsnl Office, Vandigate, Chidambaram, Tamilnadu 608001"
-                  >
-                    Chidambaram
-                  </a>
-                </li>
-                <li className="pb-1 ">
-                  <a
-                    href="#"
-                    className="hover:text-red-700 underline"
-                    title=" Mangalam near V.S.Public School, No.244, Mosque St, Tirukazhukundram Tamil Nadu 603109"
-                  >
-                    Tirukazhukundram
-                  </a>
-                </li>
-                <li className="pb-1 ">
-                  <a
-                    href="#"
-                    className="hover:text-red-700 underline"
-                    title="No 471, Chengalpattu Road, Nchipuramnchipuram, Kancheepuram, Tamil Nadu, 631561"
-                  >
-                    Kanchipuram
-                  </a>
-                </li>
-                <li className="pb-1 ">
-                  <a
-                    href="#"
-                    className="hover:text-red-700 underline"
-                    title="SH 118A, Uthiramerur, Tamil Nadu 603406"
-                  >
-                    Uthiramerur
-                  </a>
-                </li>
-                <li className="pb-1 ">
-                  <a
-                    href="#"
-                    className="hover:text-red-700 underline"
-                    title=" Main Road, Pavunjur , Tamilnadu 603 312"
-                  >
-                    Pavunjur
-                  </a>
-                </li>
+                <a href="#">
+                  <li className="pb-1 ">
+                    <p className="text-[18px] font-semibold pb-2">Vellore</p>
+                    <span>
+                      No.1/1A-1, Chennai Bangalore High Way, Mottur, Abdullapuram, Vellore - 632010
+                    </span>
+                  </li>
+                </a>
+                <a href="#">
+                  <li className="pt-3 pb-1 ">
+                    <p className="text-[18px] font-semibold pb-2">Redhills</p>
+                    <span>
+                     No. 501, GNT Road, Thandalkazhani, Red Hills, Chennai - 600052
+                    </span>
+                  </li>
+                </a>
               </ul>
             </div>
           </div>
@@ -145,7 +89,7 @@ const Footer = () => {
 
         <div className="footer-row-4 pt-8 md:px-20 px-5">
           <p className="text-right text-[13px]">
-            © 2025 Reserved by TRR Group. Developed by{" "}
+            © 2025 TRR Group. Developed by{" "}
             <span className="text-red-500">
               <a href="https://www.prismadverto.com/">Prism Adverto Pvt Ltd</a>
             </span>
