@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Main.css'
 import Framermotion from './Framermotion'
 import { motion } from 'framer-motion'
@@ -7,8 +7,28 @@ import Myaccordition from './Myaccordition'
 import About from './About'
 import EicherLogo from '../assets/trr-trcuks-buses.svg'
 import MyCarousal from './MyCarousal'
+import { useForm } from 'react-hook-form'
+
 
 const Main = () => {
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm()
+
+
+  const onSubmit = (data) => {
+    const userdata = {
+      username: data.name,
+      email: data.email,
+      phone: data.tel,
+      comments: data.textarea,
+    };
+    console.log(userdata);
+  };
+
   return (
     <>
       <main>
@@ -165,80 +185,108 @@ const Main = () => {
           <About />
         </section>
         {/* Contact */}
-        <div
-          className='contact-container bg-white/90 pb-20 md:cursor-pointer'
-          id='Contact'
-        >
-          <div className='contact md:pt-30 pt-20 pb-10 md:px-5 px-5'>
-            <h1 className='text-black md:text-4xl text-4xl font-extrabold'>
-              Need Help?
-            </h1>
-            <h1 className='text-black/50 md:text-4xl text-[30px]'>
-              Contact Our Team
-            </h1>
-          </div>
-          <div className='full-contain md:flex justify-items-start md:pb-10 pb-0'>
-            <div className='form-contact md:px-5 px-5 md:w-1/2 w-full'>
-              <form action='' method='get' className='flex flex-col gap-3'>
-                <label htmlFor='name'></label>
-                <input
-                  type='text'
-                  name='name'
-                  id=''
-                  placeholder='Enter Your Name'
-                  className='bg-white p-3 outline-none'
-                />
-                <label htmlFor='email'></label>
-                <input
-                  type='email'
-                  name='email'
-                  placeholder='Enter your email'
-                  id=''
-                  className='bg-white p-3 outline-none'
-                />
-                <label htmlFor='tel'></label>
-                <input
-                  type='tel'
-                  name='tel'
-                  placeholder='Enter your phone number'
-                  id=''
-                  className='bg-white p-3 outline-none'
-                />
-                <label htmlFor='comments'></label>
-                <textarea
-                  name='textarea'
-                  id=''
-                  cols='5'
-                  rows='3'
-                  className='bg-white p-3 outline-none'
-                  placeholder='Comments'
-                ></textarea>
-                {/* Here add a Recaptacha */}
-                <button
-                  type='submit'
-                  className='bg-[#ff0000] hover:bg-blue-900 text-black font-bold py-3 cursor-pointer'
-                >
-                  Submit
-                </button>
-              </form>
+        <section>
+          <div
+            className='contact-container bg-white/90 pb-20 md:cursor-pointer'
+            id='Contact'
+          >
+            <div className='contact md:pt-30 pt-20 pb-10 md:px-5 px-5'>
+              <h1 className='text-black md:text-4xl text-4xl font-extrabold'>
+                Need Help?
+              </h1>
+              <h1 className='text-black/50 md:text-4xl text-[30px]'>
+                Contact Our Team
+              </h1>
             </div>
-            <div className='md:w-1/2 w-full md:px-30 px-5 md:py-0 py-10'>
-              <h6 className='text-black md:text-4xl text-2xl'>
-                Please fill out the form below to request any information or
-                to&nbsp;
-                <span className='text-black/50 font-bold'>
-                  drop us feedback.
-                </span>
-              </h6>
-              <p className='py-5'>
-                Please fill out the form below to request more information,
-                share your questions, or provide us with your valuable feedback.
-                We appreciate your input and will get back to you as soon as
-                possible.
-              </p>
+            <div className='full-contain md:flex justify-items-start md:pb-10 pb-0'>
+              <div className='form-contact md:px-5 px-5 md:w-1/2 w-full'>
+                <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-3'>
+                  <label htmlFor='name'></label>
+                  <input
+                    type='text'
+                    name='name'
+                    id=''
+                    placeholder='Enter Your Name'
+                    className='bg-white p-3 outline-none'
+                    {...register('name', {
+                      required: { value: true, message: "user name is required" },
+                      maxLength: { value: 30, message: 'Maximum 30 letters only allowed' },
+                      minLength: { value: 3, message: 'minimum above 3 letters need' }
+                    })}
+                  />
+                  {errors.name && <p className='text-red-500'>{errors.name.message}</p>}
+                  <label htmlFor='email'></label>
+                  <input
+                    type='email'
+                    name='email'
+                    placeholder='Enter your email'
+                    id=''
+                    className='bg-white p-3 outline-none'
+                    {...register('email', {
+                      required: { value: true, message: "Email is required" },
+                      maxLength: { value: 30, message: 'Maximum 30 letters only allowed' },
+                      minLength: { value: 3, message: 'minimum above 3 letters need' }
+                    })}
+                  />
+                  {errors.email && <p className='text-red-500'>{errors.email.message}</p>}
+                  <label htmlFor='tel'></label>
+                  <input
+                    type='tel'
+                    name='tel'
+                    placeholder='Enter your phone number'
+                    id=''
+                    className='bg-white p-3 outline-none'
+                    {...register('tel', {
+                      required: { value: true, message: "Phone is required" },
+                      maxLength: { value: 10, message: 'Maximum 30 letters only allowed' },
+                      minLength: { value: 10, message: 'minimum above 3 letters need' }
+                    })}
+                  />
+                  {errors.tel && <p className='text-red-500'>{errors.tel.message}</p>}
+                  <label htmlFor='comments'></label>
+                  <textarea
+                    name='textarea'
+                    id=''
+                    cols='5'
+                    rows='3'
+                    className='bg-white p-3 outline-none'
+                    placeholder='Comments'
+                    {...register('textarea', {
+                      required: { value: true, message: "Comments is required" },
+                      maxLength: { value: 300, message: 'max length is 300' },
+                      minLength: { value: 3, message: 'minimum above 3 letters need' }
+                    })}
+                  ></textarea>
+                  {errors.textarea && <p className='text-red-500'>{errors.textarea.message}</p>}
+
+                  {/* Here add a Recaptacha */}
+                  <button
+                    type='submit'
+                    className='bg-[#ff0000] hover:bg-blue-900 text-black font-bold py-3 cursor-pointer'
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+              <div className='md:w-1/2 w-full md:px-30 px-5 md:py-0 py-10'>
+                <h6 className='text-black md:text-4xl text-2xl'>
+                  Please fill out the form below to request any information or
+                  to&nbsp;
+                  <span className='text-black/50 font-bold'>
+                    drop us feedback.
+                  </span>
+                </h6>
+                <p className='py-5'>
+                  Please fill out the form below to request more information,
+                  share your questions, or provide us with your valuable feedback.
+                  We appreciate your input and will get back to you as soon as
+                  possible.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+
       </main>
     </>
   )
