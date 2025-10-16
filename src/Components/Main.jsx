@@ -8,26 +8,24 @@ import About from './About'
 import EicherLogo from '../assets/trr-trcuks-buses.svg'
 import MyCarousal from './MyCarousal'
 import { useForm } from 'react-hook-form'
-
+import TruckImg from '../assets/trucks-1.webp'
 
 const Main = () => {
-
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors }
   } = useForm()
 
-
-  const onSubmit = (data) => {
+  const onSubmit = data => {
     const userdata = {
       username: data.name,
       email: data.email,
       phone: data.tel,
-      comments: data.textarea,
-    };
-    console.log(userdata);
-  };
+      comments: data.textarea
+    }
+    console.log(userdata)
+  }
 
   return (
     <>
@@ -153,7 +151,8 @@ const Main = () => {
                 <li>1. Heavy Duty Trucks</li>
                 <li>2. Light & Medium Duty Trucks</li>
                 <li>3. Buses</li>
-                <li>4. Small Vehicles (EV)</li>
+                <li>4. Small Vehicles (EV Pickup)</li>
+                <li>5. Small Vehicles (Diesel Pickup)</li>
               </ul>
             </div>
             <div className='md:w-1/2 w-full bg-white'>
@@ -180,6 +179,32 @@ const Main = () => {
             </div>
           </div>
         </section>
+
+        <section id='Services'>
+          <div className='vol-img-design text-white md:flex md:flex-row flex-row-reverse justify-evenly align-top'>
+            <div className='md:w-1/2 w-full md:px-20 px-4 md:py-10 py-10'>
+              <h4 className='md:text-[26px] font-bold uppercase'>
+                Heavy Tipper Trucks
+              </h4>
+              <p className='pt-5 text-[15px] pb-2'>
+                Eicher’s Tipper Trucks offer unbeatable durability. Our Hyva
+                Trucks and Dumper Trucks are designed to handle 18.5 to 35 Tons.
+                Get the best dumper truck for superior performance.
+              </p>
+              <p className='md'>
+                "...Engineered for power and efficiency, our Tipper Trucks are
+                equipped with proven Eicher engines that deliver high torque at
+                low RPMs. This not only ensures quick turnaround times on the
+                toughest terrains but also translates to superior fuel
+                efficiency, significantly lowering your operating costs and
+                maximizing your profitability."
+              </p>
+            </div>
+            <div className='md:w-1/2 w-full h-auto'>
+              <img src={TruckImg} alt='' className='' />
+            </div>
+          </div>
+        </section>
         {/* About */}
         <section>
           <About />
@@ -200,7 +225,10 @@ const Main = () => {
             </div>
             <div className='full-contain md:flex justify-items-start md:pb-10 pb-0'>
               <div className='form-contact md:px-5 px-5 md:w-1/2 w-full'>
-                <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-3'>
+                <form
+                  onSubmit={handleSubmit(onSubmit)}
+                  className='flex flex-col gap-3'
+                >
                   <label htmlFor='name'></label>
                   <input
                     type='text'
@@ -209,12 +237,23 @@ const Main = () => {
                     placeholder='Enter Your Name'
                     className='bg-white p-3 outline-none'
                     {...register('name', {
-                      required: { value: true, message: "user name is required" },
-                      maxLength: { value: 30, message: 'Maximum 30 letters only allowed' },
-                      minLength: { value: 3, message: 'minimum above 3 letters need' }
+                      required: {
+                        value: true,
+                        message: 'user name is required'
+                      },
+                      maxLength: {
+                        value: 30,
+                        message: 'Maximum 30 letters only allowed'
+                      },
+                      minLength: {
+                        value: 3,
+                        message: 'minimum above 3 letters need'
+                      }
                     })}
                   />
-                  {errors.name && <p className='text-red-500'>{errors.name.message}</p>}
+                  {errors.name && (
+                    <p className='text-red-500'>{errors.name.message}</p>
+                  )}
                   <label htmlFor='email'></label>
                   <input
                     type='email'
@@ -223,12 +262,20 @@ const Main = () => {
                     id=''
                     className='bg-white p-3 outline-none'
                     {...register('email', {
-                      required: { value: true, message: "Email is required" },
-                      maxLength: { value: 30, message: 'Maximum 30 letters only allowed' },
-                      minLength: { value: 3, message: 'minimum above 3 letters need' }
+                      required: { value: true, message: 'Email is required' },
+                      maxLength: {
+                        value: 30,
+                        message: 'Maximum 30 letters only allowed'
+                      },
+                      minLength: {
+                        value: 3,
+                        message: 'minimum above 3 letters need'
+                      }
                     })}
                   />
-                  {errors.email && <p className='text-red-500'>{errors.email.message}</p>}
+                  {errors.email && (
+                    <p className='text-red-500'>{errors.email.message}</p>
+                  )}
                   <label htmlFor='tel'></label>
                   <input
                     type='tel'
@@ -237,12 +284,20 @@ const Main = () => {
                     id=''
                     className='bg-white p-3 outline-none'
                     {...register('tel', {
-                      required: { value: true, message: "Phone is required" },
-                      maxLength: { value: 10, message: 'Maximum 30 letters only allowed' },
-                      minLength: { value: 10, message: 'minimum above 3 letters need' }
+                      required: { value: true, message: 'Phone is required' },
+                      maxLength: {
+                        value: 10,
+                        message: 'Maximum 30 letters only allowed'
+                      },
+                      minLength: {
+                        value: 10,
+                        message: 'minimum above 3 letters need'
+                      }
                     })}
                   />
-                  {errors.tel && <p className='text-red-500'>{errors.tel.message}</p>}
+                  {errors.tel && (
+                    <p className='text-red-500'>{errors.tel.message}</p>
+                  )}
                   <label htmlFor='comments'></label>
                   <textarea
                     name='textarea'
@@ -252,12 +307,20 @@ const Main = () => {
                     className='bg-white p-3 outline-none'
                     placeholder='Comments'
                     {...register('textarea', {
-                      required: { value: true, message: "Comments is required" },
+                      required: {
+                        value: true,
+                        message: 'Comments is required'
+                      },
                       maxLength: { value: 300, message: 'max length is 300' },
-                      minLength: { value: 3, message: 'minimum above 3 letters need' }
+                      minLength: {
+                        value: 3,
+                        message: 'minimum above 3 letters need'
+                      }
                     })}
                   ></textarea>
-                  {errors.textarea && <p className='text-red-500'>{errors.textarea.message}</p>}
+                  {errors.textarea && (
+                    <p className='text-red-500'>{errors.textarea.message}</p>
+                  )}
 
                   {/* Here add a Recaptacha */}
                   <button
@@ -278,15 +341,14 @@ const Main = () => {
                 </h6>
                 <p className='py-5'>
                   Please fill out the form below to request more information,
-                  share your questions, or provide us with your valuable feedback.
-                  We appreciate your input and will get back to you as soon as
-                  possible.
+                  share your questions, or provide us with your valuable
+                  feedback. We appreciate your input and will get back to you as
+                  soon as possible.
                 </p>
               </div>
             </div>
           </div>
         </section>
-
       </main>
     </>
   )

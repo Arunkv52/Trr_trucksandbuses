@@ -6,10 +6,11 @@ import Slide_3 from '../assets/motion-3.webp';
 import StaffBus from '../assets/Satff_bus.png'
 import SchoolBus from '../assets/school_bus.jpg'
 import Slide_4 from '../assets/motion-4.jpg';
+import TipperImg from '../assets/tipper-img.jpg'
 
 
 
-const images = [Slide_1, Slide_2, Slide_3, StaffBus, SchoolBus, Slide_4];
+const images = [Slide_1, Slide_2, Slide_3,TipperImg, StaffBus, SchoolBus, Slide_4];
 
 const HorizontalScrollSection = () => {
   const targetRef = useRef(null);

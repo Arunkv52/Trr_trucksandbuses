@@ -11,7 +11,7 @@ import Motion4 from "../assets/motion-4.jpg";
 import Motion6 from "../assets/motion-6.jpg";
 import Motion5 from "../assets/bus_img.png";
 import Motion7 from "../assets/village-bus.png";
-
+import Motion8 from '../assets/max-cab.jpg'
 
 
 
@@ -41,6 +41,9 @@ const Mycarousel = () => {
         </CarouselItem>
          <CarouselItem>
           <img src={Motion7} alt="Slide 4" className="w-full h-full" />
+        </CarouselItem>
+        <CarouselItem>
+          <img src={Motion8} alt="Slide 5" className="w-full h-full" />
         </CarouselItem>
       </CarouselContent>
       {/* No CarouselPrevious / CarouselNext for clean autoplay */}

@@ -73,6 +73,7 @@ const Footer = () => {
                       No.1/1A-1, Chennai Bangalore High Way, Mottur, Abdullapuram, Vellore - 632010
                     </span>
                   </li>
+                  <p></p>
                 </a>
                 <a href="#">
                   <li className="pt-3 pb-1 ">
