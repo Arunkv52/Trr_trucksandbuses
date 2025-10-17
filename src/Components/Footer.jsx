@@ -66,23 +66,20 @@ const Footer = () => {
                 <strong>Our Branches</strong>
               </p>
               <ul className="text-[15px] md:py-3">
-                <a href="#">
-                  <li className="pb-1 ">
-                    <p className="text-[18px] font-semibold pb-2">Vellore</p>
-                    <span>
-                      No.1/1A-1, Chennai Bangalore High Way, Mottur, Abdullapuram, Vellore - 632010
-                    </span>
-                  </li>
-                  <p></p>
-                </a>
-                <a href="#">
-                  <li className="pt-3 pb-1 ">
-                    <p className="text-[18px] font-semibold pb-2">Redhills</p>
-                    <span>
-                     No. 501, GNT Road, Thandalkazhani, Red Hills, Chennai - 600052
-                    </span>
-                  </li>
-                </a>
+                <li className="pt-3 pb-1 ">
+                  <p className="text-[18px] font-semibold pb-2">Chennai - Redhills</p>
+                  <span>
+                    No. 501, GNT Road, Thandalkazhani, Red Hills, Chennai - 600052
+                  </span>
+                  <p className="py-1">Mobile : +91 89393 62828</p>
+                </li>
+                <li className="pt-3 pb-1 ">
+                  <p className="text-[18px] font-semibold pb-2">Vellore</p>
+                  <span>
+                    No.1/1A-1, Chennai Bangalore High Way, Mottur, Abdullapuram, Vellore - 632010
+                  </span>
+                  <p className="py-1">Mobile : +91 89258 81267</p>
+                </li>
               </ul>
             </div>
           </div>

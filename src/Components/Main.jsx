@@ -85,7 +85,7 @@ const Main = () => {
                 </span>
               </h3>
             </div>
-            <div className='content-3 py-10 md:flex justify-start align-middle md:gap-10'>
+            <div className='content-3 py-10 md:grid md:grid-cols-3 grid grid-cols-1 md:gap-10'>
               <div className='cont-1 bg-[#f2f2f2] p-5 m-3 md:m-0'>
                 <img src={EicherLogo} alt='' />
                 <h5 className='text-2xl font-bold py-2 uppercase'>
@@ -135,6 +135,21 @@ const Main = () => {
                   vehicles. This move aligns with the global shift towards
                   sustainable transportation and the growing demand for
                   eco-friendly logistics solutions.
+                </p>
+              </div>
+              <div className='cont-1 bg-[#f2f2f2] p-5 m-3 md:m-0'>
+                <img src={EicherLogo} alt='' />
+                <h5 className='text-2xl font-bold py-2 uppercase'>
+                  Small Vehicles (Diesel)
+                </h5>
+                <p className='py-5 md:text-[15px]'>
+                  Eicher's small and light-duty commercial vehicles,
+                  particularly the Pro series, are designed to be a blend of
+                  performance, fuel efficiency, and driver comfort, making them
+                  popular choices for urban and last-mile logistics. These
+                  diesel trucks are tailored for profitability across various
+                  applications like courier, e-commerce, FMCG, and industrial
+                  goods transport
                 </p>
               </div>
             </div>
@@ -188,8 +203,10 @@ const Main = () => {
               </h4>
               <p className='pt-5 text-[15px] pb-2'>
                 Eicher’s Tipper Trucks offer unbeatable durability. Our Hyva
-                Trucks and Dumper Trucks are designed to handle 18.5 to 35 Tons.
-                Get the best dumper truck for superior performance.
+                rucks and Dumper Trucks are designed to handle 18.5 to 48 Tons
+                with Globally Proven Engine{' '}
+                <span className='text-red-500'>VEDX8 - 7.7L </span>. Get the
+                best dumper truck for superior performance.
               </p>
               <p className='md'>
                 "...Engineered for power and efficiency, our Tipper Trucks are
